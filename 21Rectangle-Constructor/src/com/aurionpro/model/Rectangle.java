@@ -3,14 +3,21 @@ package com.aurionpro.model;
 public class Rectangle {
 	private int width;
 	private int height;
+	private Color color;
 
-	public Rectangle(int width, int height) {
+	public Rectangle(int width, int height, Color color) {
+
 		this.width = width;
 		this.height = height;
+		this.color = color;
 	}
+
+	public Rectangle(int width, int height) {
+		this(width,height,Color.red);
+	}
+
 	public Rectangle() {
-		this.width=7;
-		this.height=10;
+		this(7, 10, Color.blue);
 	}
 
 	public void setWidth(int width) {
@@ -21,12 +28,20 @@ public class Rectangle {
 		this.height = height;
 	}
 
+	public void setColor(Color color) {
+		this.color = color;
+	}
+
 	public int getWidth() {
 		return width;
 	}
 
 	public int getHeight() {
 		return height;
+	}
+
+	public Color getColor() {
+		return color;
 	}
 
 	public double CalculateArea() {
