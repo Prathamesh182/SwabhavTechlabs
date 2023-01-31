@@ -8,7 +8,7 @@ public class CircleTest {
 	public static void main(String[] args) {
 		Circle circle = new Circle();
 		circle.setRadius(2);
-		circle.setBorder(bordertype.dashed);
+		circle.setBorder(bordertype.solid);
 		circle.calculateArea();
 		System.out.println(circle.getRadius());
 		System.out.println(circle.getBorder());

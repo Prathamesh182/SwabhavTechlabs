@@ -22,7 +22,7 @@ public class Circle {
 
 	public double calculateArea() {
 
-		return radius * radius * Math.PI;
+		return radius * radius *3.14 ;
 
 	}
 
