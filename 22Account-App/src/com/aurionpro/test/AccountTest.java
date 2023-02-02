@@ -9,7 +9,7 @@ public class AccountTest {
 		printAccountDetail(account);
 		account.withdraw(200);
 		printAccountDetail(account);
-		account.deposit(10000);
+		account.deposit(100000);
 		printAccountDetail(account);
 		Account account1 = new Account();
 		printAccountDetail(account1);

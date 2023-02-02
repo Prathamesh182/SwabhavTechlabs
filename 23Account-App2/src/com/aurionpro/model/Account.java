@@ -43,16 +43,27 @@ public class Account {
 		this.balance = balance;
 	}
 
-	public void deposit(double amount) {
-	balance += amount;
-		
-		
-	}
-	public void withdraw(double amount) {
-		if(balance-amount>1000) {
-			balance = balance - amount;
-			
+	public boolean deposit(double amount) {
+		if(amount>0) {
+		balance = balance + amount;
+		return true;
 		}
+		
+		else {
+			return false;
+		}
+		
+
+	}
+
+	public boolean withdraw(double amount) {
+		if (balance - amount > 1000) {
+			balance = balance - amount;
+			return true;
+		}else {
+			return false;
+		}
+		
 	}
 
 }

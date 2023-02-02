@@ -4,19 +4,12 @@ public class Account {
 	private int accountNumber;
 	private String name;
 	private double balance;
-
+	
 	public Account(int accountNumber, String name, double balance) {
+		super();
 		this.accountNumber = accountNumber;
 		this.name = name;
 		this.balance = balance;
-	}
-
-	public Account(int accountNumber, String name) {
-		this(accountNumber, name, 1000);
-	}
-
-	public Account() {
-		this(101, "Prathamesh", 1000);
 	}
 
 	public int getAccountNumber() {
@@ -42,17 +35,12 @@ public class Account {
 	public void setBalance(double balance) {
 		this.balance = balance;
 	}
+	
 
-	public void deposit(double amount) {
-	balance += amount;
-		
-		
-	}
-	public void withdraw(double amount) {
-		if(balance-amount>1000) {
-			balance = balance - amount;
-			
-		}
-	}
+	
 
+	@Override
+	public String toString() {
+		return "Account [accountNumber=" + accountNumber + ", name=" + name + ", balance=" + balance + "]";
+	}
 }
