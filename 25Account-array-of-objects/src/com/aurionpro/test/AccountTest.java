@@ -25,8 +25,31 @@ public class AccountTest {
 		}
 		System.out.println("The Highest Balance is:" + accounts[index]);
 		System.out.println();
-		// System.out.println("Sorting the accounts");		
+		System.out.println("Sorting the accounts");	
+		sortingAccounts(accounts);
+		for (Account x : accounts) {
+			printAccountDetails(x);
+		}
 	}
+	
+
+	private static void sortingAccounts(Account[] array) {
+		int k , j;
+		Account temp;
+		for(k=0;k<array.length;k++) {
+			for(j=k+1;j<array.length;j++) {
+				if(array[k].getBalance()>array[j].getBalance()) {
+					temp=array[k];
+					array[k]=array[j];
+					array[j]=temp;
+					
+					
+				}
+			}
+		}
+	}
+	
+
 
 	private static void printAccountDetails(Account x) {
 		System.out.println("The Account Number is:" + x.getAccountNumber());
