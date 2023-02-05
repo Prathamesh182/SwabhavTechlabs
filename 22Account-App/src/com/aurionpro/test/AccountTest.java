@@ -5,22 +5,18 @@ import com.aurionpro.model.Account;
 public class AccountTest {
 
 	public static void main(String[] args) {
-		Account account = new Account(102,"AjuSir",3000);
-		printAccountDetail(account);
-		account.withdraw(200);
-		printAccountDetail(account);
-		account.deposit(100000);
-		printAccountDetail(account);
-		Account account1 = new Account();
-		printAccountDetail(account1);
-		
+		Account acc = new Account(101,"Water",10000);
+		//printAccountDetails(acc);
+		Account acc1 = new Account(102,"Sun");
+		//printAccountDetails(acc1);
+		Account acc2 = new Account(103);
+		//printAccountDetails(acc2);
+		int count = Account.getAccountCount();
+		System.out.println(count);
 	}
-
-	private static void printAccountDetail(Account account) {
-		System.out.println("AccountNo :"+account.getAccountNumber());
-		System.out.println("Name :"+account.getName());
-		System.out.println("Balance :"+account.getBalance());
-		System.out.println();
-	}
+	
+//	private static void printAccountDetails(Account acc) {
+//		
+//	}
 
 }

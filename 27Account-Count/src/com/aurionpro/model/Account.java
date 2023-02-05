@@ -4,21 +4,19 @@ public class Account {
 	private int accountNumber;
 	private String name;
 	private double balance;
-	private static int count;
 
 	public Account(int accountNumber, String name, double balance) {
 		this.accountNumber = accountNumber;
 		this.name = name;
 		this.balance = balance;
-		this.count++;
 	}
 
 	public Account(int accountNumber, String name) {
 		this(accountNumber, name, 1000);
 	}
 
-	public Account(int acccountNumber) {
-		this(101, "Unknown", 1000);
+	public Account() {
+		this(101, "Prathamesh", 1000);
 	}
 
 	public int getAccountNumber() {
@@ -45,12 +43,16 @@ public class Account {
 		this.balance = balance;
 	}
 
-	@Override
-	public String toString() {
-		return "Account [accountNumber=" + accountNumber + ", name=" + name + ", balance=" + balance + "]";
+	public void deposit(double amount) {
+	balance += amount;
+		
+		
 	}
-	public static int getAccountCount() {
-		return count;
+	public void withdraw(double amount) {
+		if(balance-amount>1000) {
+			balance = balance - amount;
+			
+		}
 	}
-	
+
 }
