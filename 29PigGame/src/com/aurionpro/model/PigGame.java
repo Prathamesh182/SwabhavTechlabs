@@ -19,14 +19,8 @@ public class PigGame {
 	public void setTotalscore(int totalscore) {
 		this.totalscore = totalscore;
 	}
-	public int play() {
-		int dicenumber =this.getrollDiceNumber();
-		return dicenumber;
-	}
-	private int getrollDiceNumber() {
-
-		return 0;
-	}
+	
+	
 	
 }	
 	 
