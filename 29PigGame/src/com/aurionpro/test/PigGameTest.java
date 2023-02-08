@@ -17,42 +17,39 @@ public class PigGameTest {
 				System.out.println("Roll Or Hold (r/h):");
 				String Select = sc.next();
 				if (Select.equalsIgnoreCase("r")) {
-					System.out.println("You Selected Roll");
+					//System.out.println("You Selected Roll");
 					dice = (int) (Math.random() * 6) + 1;
 					System.out.println("dice: " + dice);
 					turnscore = turnscore + dice;
-				
+
 					if (dice == 1) {
-					System.out.println();
-					System.out.println("oops you are out");
-					System.out.println("turnscore total:"+points);
-					}
-					else if((turnscore+points)>=20) {
-						points=turnscore+points;
 						System.out.println();
-						System.out.println("Score for turn:"+turnscore);
-						System.out.println("Total score"+points);
+						System.out.println("oops you are out");
+						System.out.println("turnscore total:" + points);
+					} else if ((turnscore + points) >= 20) {
+						points = turnscore + points;
+						System.out.println();
+						System.out.println("Score for turn:" + turnscore);
+						System.out.println("Total score" + points);
 						break;
 					}
 				}
 
 				else if (Select.equalsIgnoreCase("h")) {
-					System.out.println("You Selected Hold");
-					points=points+turnscore;
+					//System.out.println("You Selected Hold");
+					points = points + turnscore;
 					System.out.println();
-					System.out.println("Score for turn:"+turnscore);
-					System.out.println("Total Score:"+points);
+					System.out.println("Score for turn:" + turnscore);
+					System.out.println("Total Score:" + points);
 					break;
-					
 
 				}
-				// System.out.println(roll);
 			}
 		}
 		System.out.println();
-		System.out.println("You Won In: "+turn+" turns");
+		System.out.println("You Won In: " + turn + " turns");
 		System.out.println();
 		System.out.println("game over");
 	}
-	
+
 }
