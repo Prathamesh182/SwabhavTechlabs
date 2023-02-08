@@ -18,7 +18,7 @@ public class Cricket {
 			int point = 1;
 			int round1 = 0;
 			int score1 = 0;
-			while (point != 0 && round1 < 12) {
+			while (point != 0 && round1 <= 12) {
 				System.out.println("Enter 1 to open the book:");
 				int key = sc.nextInt();
 				if (key == 1) {
