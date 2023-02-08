@@ -32,6 +32,7 @@ public class Cricket {
 					System.out.println("pageNumber:" + Number + "\nPoint:" + point + "\nScore:" + score1);
 				}
 			}
+			System.out.println();
 			System.out.println("The total Score: " + score1 + "\nThe Score to make by Player 2 is:" + (++score1));
 			System.out.println("Player2:" + Choice3);
 			int min1 = 1, max1 = 300;
@@ -45,6 +46,13 @@ public class Cricket {
 					int Number1 = (int) (Math.floor(Math.random() * (max1 - min1 + 1) + min1));
 					point2 = Number1 % 7;
 					score2 = point2 + score2;
+					if(score2>score1) {
+						System.out.println("pageNumber:" + Number1 + "\nPoint:" + point2 + "\nScore:" + score2);
+
+						break;
+
+					}
+
 					round2++;
 					if (point2 == 0)
 						System.out.println("oops you are out");
