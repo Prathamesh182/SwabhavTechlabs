@@ -19,7 +19,7 @@ public class RepositoryTest {
 		obj.delete();
 		obj.update();
 		obj.read();
-		System.out.println();
+		System.out.println("*********************************************");
 	}
 
 	
