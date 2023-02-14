@@ -9,7 +9,7 @@ import com.aurionpro.model.Student;
 public class SerializationTest {
 
 	public static void main(String[] args) {
-		Student student = new Student(101, "Rocky", 97.2);
+		Student student = new Student(101, "Prathamesh", 97.2);
 
 		try {
 			FileOutputStream file = new FileOutputStream("E:\\Assignment\\test.txt");
