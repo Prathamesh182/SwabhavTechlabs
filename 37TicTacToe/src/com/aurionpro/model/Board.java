@@ -112,7 +112,7 @@ class Play{
 		tictactoe.placeMark(2, 0, 'O');
 		tictactoe.placeMark(1, 1, 'X');
 		tictactoe.placeMark(2, 2, 'X');
-//		tictactoe.displayBoard();
+		tictactoe.displayBoard();
 		System.out.println(tictactoe.diagonalCheck());
 		System.out.println(tictactoe.rowCheck());
 		System.out.println(tictactoe.colCheck());
