@@ -2,6 +2,7 @@ package com.aurionpro.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import com.aurionpro.model.Account2;
@@ -46,6 +47,7 @@ public class AccountTest {
 	//	Collections.sort(list,Collections.reverseOrder());
 	//	Collections.sort(list, new SortByBalance());
 		Collections.sort(list,new SortByName());
+		//Collections.sort(Comparator.comparing(Account2::getBalance));
 
 		System.out.println("The Total Balance is: " + total);
 		System.out.println("The Highest Balance is: " + list.get(index));
