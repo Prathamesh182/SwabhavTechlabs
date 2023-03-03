@@ -1,10 +1,10 @@
 package com.aurionpro.test;
 
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+
 
 import com.aurionpro.model.Student;
 
@@ -17,7 +17,7 @@ public class DeserializationTest {
 			FileInputStream file = new FileInputStream("E:\\Assignment\\test.txt");
 			ObjectInputStream in = new ObjectInputStream(file);
 			// System.out.println(student);
-			student = (Student) in.readObject();
+			student = (Student)in.readObject();
 			in.close();
 			file.close();
 			System.out.println("Data has been Deserialized\n" + student);

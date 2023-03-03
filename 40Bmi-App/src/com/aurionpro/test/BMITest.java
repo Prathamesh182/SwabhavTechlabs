@@ -6,8 +6,8 @@ import com.aurionpro.model.Person;
 public class BMITest {
 
 	public static void main(String[] args) {
-		System.out.println("BMI Calculator");
-		System.out.println();
+		System.out.println("BMI Calculator\n");
+		//System.out.println();
 		Person person = new Person("Prathamesh",23,1.78,79);
 		System.out.println(person+"\n");
 		

@@ -1,6 +1,5 @@
 package com.aurionpro.test;
 
-import javax.net.ssl.KeyManagerFactorySpi;
 
 import com.aurionpro.model.Accountant;
 import com.aurionpro.model.Manager;

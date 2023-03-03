@@ -4,10 +4,7 @@ public abstract class Employee {
 	public int employeeId;
 	public String name;
 	public double basicSalary;
-	@Override
-	public String toString() {
-		return "Employee [employeeId=" + employeeId + ", name=" + name + ", basicSalary=" + basicSalary + "]";
-	}
+	
 	public Employee(int employeeId, String name, double basicSalary) {
 		super();
 		this.employeeId = employeeId;
@@ -33,6 +30,11 @@ public abstract class Employee {
 		this.basicSalary = basicSalary;
 	}
 	public abstract double calculateAnnualCTC();
+	
+	@Override
+	public String toString() {
+		return "Employee [employeeId=" + employeeId + ", name=" + name + ", basicSalary=" + basicSalary + "]";
+	}
 	
 
 }

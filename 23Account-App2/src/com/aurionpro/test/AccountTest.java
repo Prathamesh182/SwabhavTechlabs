@@ -20,8 +20,8 @@ public class AccountTest {
 	private static void deposit(Account acc, int i) {
 		if (acc.deposit(i)) {
 			System.out.println("The account number is:" + acc.getAccountNumber());
-			System.out.println("The amount is suucessfully deposited");
-			System.out.println("The amount deposited is: " + acc.getBalance());
+			System.out.println("The amount is suucessfully deposited and the balance now is :"+acc.getBalance());
+		//	System.out.println("The amount deposited is: " + acc.getBalance());
 			System.out.println();
 		} else {
 			System.out.println("The Entered Amount is:");

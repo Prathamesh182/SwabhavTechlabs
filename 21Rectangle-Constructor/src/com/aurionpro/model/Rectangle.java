@@ -1,3 +1,4 @@
+
 package com.aurionpro.model;
 
 public class Rectangle {
@@ -18,6 +19,10 @@ public class Rectangle {
 
 	public Rectangle() {
 		this(7, 10, Color.blue);
+	}
+	
+	public Rectangle(int height) {
+		this(10,height,Color.green);
 	}
 
 	public void setWidth(int width) {

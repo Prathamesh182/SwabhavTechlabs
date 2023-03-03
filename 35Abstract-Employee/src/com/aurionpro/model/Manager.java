@@ -2,8 +2,8 @@ package com.aurionpro.model;
 
 public class Manager extends Employee {
 	private double hra ;
-	private double da;
-	private double ta ;
+	private double da  ;
+	private double ta  ;
 	
 
 	public Manager(int employeeId, String name, double basicSalary) {

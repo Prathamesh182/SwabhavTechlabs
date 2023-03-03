@@ -10,7 +10,7 @@ public class Fibonacci {
 		System.out.println("The fibonacci series of the entered value is:");
 
 		for (int i = 0; i < n; i++) {
-			System.out.println(num1 + "");
+			System.out.println(num1);
 			num3 = num1 + num2;
 			num1 = num2;
 			num2 = num3;

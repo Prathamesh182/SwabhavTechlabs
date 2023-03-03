@@ -8,7 +8,6 @@ public class SinglyLinkedList {
 		Node next;
 
 		public Node(int data) {
-			super();
 			this.data = data;
 			this.next = null;
 		}
@@ -72,7 +71,6 @@ public class SinglyLinkedList {
 
 	public static void main(String[] args) {
 		SinglyLinkedList slist = new SinglyLinkedList();
-		// System.out.println(slist);
 		slist.input();
 		slist.Display();
 		slist.Search(20);

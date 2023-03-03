@@ -13,6 +13,11 @@ public class RectangleTest {
 		
 		Rectangle rectangle2 = new Rectangle();
 		printRectangleDetails(rectangle2);
+		
+		Rectangle rectangle3 = new Rectangle(20);
+		printRectangleDetails(rectangle3);
+
+		
 	}
 	
 	private static void printRectangleDetails(Rectangle rectangle) {
